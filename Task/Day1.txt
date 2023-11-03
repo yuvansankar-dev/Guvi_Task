@@ -1,0 +1,59 @@
+1 . Major difference between HTTP/1.1 and HTTP/2 is
+
+ 
+HTTP/1.1 - Sequential Handling -  if a resource takes longer to load, it can block the loading of other resources.
+HTTP/2 - Multiplexing - allowing multiple requests and responses to be sent and received simultaneously over a single connection
+
+HTTP/1.1 - Uncompressed Headers -headers are not compressed, which can result in significant overhead, especially when multiple small requests are made with redundant headers.
+HTTP/2 -  Header Compression -  header compression (HPACK) to reduce the size of headers, resulting in less data transfer and faster page loading.
+
+HTTP/1.1 - Text-Based Protocol - less efficient in terms of parsing and processing for computers and networks.
+HTTP/2 -  Binary Protocol - more efficient for both computers and networks
+
+HTTP/1.1 - Limited Parallelism - To overcome the sequential nature of HTTP/1.1, multiple connections are often used to load resources in parallel. This can be resource-intensive and may require more DNS lookups, slowing down page loading.
+HTTP/2 - Server Push - Server push allows the web server to send resources to the client before the client requests them. This improves performance for resources that are likely to be needed, reducing the number of round trips required.
+
+
+
+----------------------------------------------------------
+
+
+2 . Write a blog about objects and its internal representation in Javascript
+
+
+Objects in JavaScript are essentially collections of properties and methods. Properties are key-value pairs, where the key is a string , and the value can be any valid JavaScript data type. Methods are simply functions that are attached to an object.
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 30
+};
+
+This is the example format for object.Object's key should be Unique.
+
+
+
+
+----------------------------------------------------------
+
+3 . IP address, port, HTTP methods, MAC address
+
+IP Address :
+
+An IP address is a unique numerical label assigned to each device connected to a computer network.
+
+Port:
+
+Port is used to connect different devices.
+Ports are used to uniquely identify different services or processes running on the same device with a single IP address.
+
+HTTP Methods:
+
+GET: Retrieve data from the server.
+POST: Add new data to the server.
+PUT: Update or replace existing data on the server.
+DELETE: Remove data from the server.
+
+MAC Address:
+
+MAC addresses are typically assigned by the hardware manufacturer and are unique to each network device.

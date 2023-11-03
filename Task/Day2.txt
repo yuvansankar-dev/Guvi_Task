@@ -1,0 +1,21 @@
+1 . write a blog  on the difference between document and window object
+
+Document Object:
+
+It provides access to the document's structure and content, including elements, text, and attributes.
+Common properties and methods associated with the Document object include 
+
+document.getElementById(),
+document.createElement(),
+document.querySelector().
+
+
+Window Object:
+
+The Window object represents the browser window or tab where the web page is loaded.
+such as Manipulating the window's size, navigating to different URLs, and interacting with the browser's history and location.
+
+Common properties and methods associated with the Window object include 
+window.alert(), 
+window.open(), 
+window.location.
