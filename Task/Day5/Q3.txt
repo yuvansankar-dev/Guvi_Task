@@ -1,0 +1,15 @@
+class Person{
+constructor(name,age,gender){
+this.name = name;
+this.age = age;
+this.gender = gender;
+}
+
+getFullName(surName){
+return `${this.name}${surName}`
+}
+}
+
+var person1 = new Person("yuvan",23,Male)
+
+console.log(person1.getFullName("sankar"))

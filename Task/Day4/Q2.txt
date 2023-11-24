@@ -1,0 +1,12 @@
+var resumeInfo =
+{
+"Name":"Yuvansankar.R",
+"Contact_Number":8148119515,
+"Mail_ID":"yuvansankar982@gmail.com",
+"Working_experience": "2years",
+"Known_technologies":["HTML","CSS","JS","REACT JS"],
+"known_language":["English","Tamil"]
+"willing_to_relocate":true,
+"highest_qualification":"B.E"
+
+}

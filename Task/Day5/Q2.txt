@@ -1,0 +1,25 @@
+class Circle{
+pi = 3.14;
+
+constructor(radius,color){
+this.radius=radius;
+this.color=color;
+}
+
+getRadius(){
+return this.radius;
+}
+
+getCircumference(){
+return (2*this.pi*this.radius);
+}
+
+getArea(){
+return (this.pi*Math.pow(this.radius,2));
+}
+
+getColor(){
+return this.color;
+}
+
+}

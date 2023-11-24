@@ -1,0 +1,16 @@
+difference between window , screen and document in java script
+
+window Object:
+
+The window object represents the browser window or tab and is the top-level object in the browser's object model.
+
+
+screen Object:
+
+The screen object provides information about the user's screen, such as its width, height, color depth, and pixel depth.
+
+
+document Object:
+
+The document object represents the HTML document loaded in the browser window.
+It provides methods and properties for manipulating the content of the document, such as selecting elements, changing their content, and handling events.

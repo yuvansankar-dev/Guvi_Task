@@ -1,0 +1,34 @@
+var json={
+"a":1,
+"b":2
+};
+
+for loop
+
+var keyArr = Object.key(json)
+for(var i=0;i<keyArr;i++){
+console.log(keyArr[i],json[keyArr[i]]);
+}
+
+
+For in Loop
+
+for(var key in json){
+console.log(key,json[key]);
+}
+
+
+For of loop
+
+var keyArr = Object.key(json)
+for (const key of keyArr) {
+  console.log(key,json[key]);
+}
+
+
+forEach
+
+var keyArr = Object.key(json)
+keyArr.forEach((key)=> {
+  console.log(key,json[key]);
+})

@@ -1,0 +1,106 @@
+1 . Print odd numbers in an array
+
+(function(){var arr=[1,2,3,4,3,1]
+const oddNumber = function (param){
+    if(param%2!==0)console.log(param)
+}
+for (var iter of arr){
+oddNumber(iter)
+}})()
+
+-----------------------------------------------------------------------------------------
+
+2 . Convert all the strings to title caps in a string array
+
+(function(){var arr=["yuvan","sankar"]
+const convert = function (param){
+    return param.toUpperCase()
+}
+console.log(arr.map(convert));})()
+
+-----------------------------------------------------------------------------------------
+
+3 . Sum of all numbers in an array
+
+(function(){var arr=[1,2,3,4,1,3]
+const addNumbers = function (acc,value){
+   return acc+value
+}
+console.log(arr.reduce(addNumbers,0))})()
+
+-----------------------------------------------------------------------------------------
+
+4 . Return all the prime numbers in an array
+
+(function(){var arr=[2,3,4,5,6]
+
+const primeNumber = function (param){
+    if(param===1|param===2){
+        return param
+    }
+    for(i=2;i<param;i++){
+        if(param%i===0)return;
+    }
+    return param;
+}
+
+for (var iter of arr){
+var returnValue = primeNumber(iter)
+returnValue&&console.log(returnValue)
+}})()
+
+-----------------------------------------------------------------------------------------
+
+5 . Return all the palindromes in an array
+
+(function(){var arr=["yuvan","malayalam","hello"]
+const palindromes = function (param){
+    var reversedString = param.split("").reverse().join("");
+    if(reversedString===param)return param;
+}
+for (var iter of arr){
+var returnValue = palindromes(iter)
+returnValue&&console.log(returnValue)
+}})()
+
+-----------------------------------------------------------------------------------------
+
+6 . Return median of two sorted arrays of the same size.
+
+(function(){var a = [1,2,3]
+var b = [6,4,5]
+var mergedArray = [...a,...b];
+var sortedArray = mergedArray.sort((a,b)=>a-b);
+const findMedian=function(){
+    var middlePosition = sortedArray.length/2
+    console.log((sortedArray[middlePosition]+sortedArray[middlePosition-1])/2)
+} 
+    findMedian ()})()
+
+-----------------------------------------------------------------------------------------
+
+7 . Remove duplicates from an array
+
+(function(){var a = [1,2,2,3,1,5,2]
+const duplicateRemove= function(acc,val){!acc.includes(val)&&acc.push(val);return acc}
+var result = a.reduce(duplicateRemove,[])
+console.log(result)
+})()
+-----------------------------------------------------------------------------------------
+
+8 . Rotate an array by k times
+
+(function(){var a = [1,2,2,3]
+var time = 5;
+while(time>=a.length){
+    time -= a.length
+}
+
+var result =[]
+const changePosition=function (iter,inx){
+    if(inx+time<=a.length-1)result[inx+time]=iter
+    else  result[inx+time-a.length]=iter
+}
+a.forEach(changePosition)
+  console.log(result)
+})()
